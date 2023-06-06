@@ -5,4 +5,9 @@ public class Bicycle extends Transport implements TyreChangeable{
     }
 
 
+    public void check() {
+        changeTyre(this.getTyreCount());
+    }
+
+
 }

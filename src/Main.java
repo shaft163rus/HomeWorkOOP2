@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-        ServiceStation service = new ServiceStation();
 
         Transport[] transports = new Transport[6];
 
@@ -12,13 +11,13 @@ public class Main {
         transports[4] = new Truck("Kamaz", 12);
         transports[5] = new Truck("Belaz", 10);
 
-        service.changeTyre(transports[1]);
 
-        service.checkEngine(transports[3]);
 
-        service.checkTrailer(transports[5]);
-
-        service.changeTyre(transports[4]);
+        transports[0].check();
+        System.out.println();
+        transports[2].check();
+        System.out.println();
+        transports[5].check();
 
 
     }

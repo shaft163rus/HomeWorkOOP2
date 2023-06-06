@@ -8,6 +8,8 @@ abstract public class Transport {
         this.tyreCount = tyreCount;
     }
 
+    abstract void check();
+
     public String getModelName() {
         return modelName;
     }
